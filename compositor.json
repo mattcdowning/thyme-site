@@ -1,0 +1,138 @@
+{
+  "name": "mattcdowning/thyme-site",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.21"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Default",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+    "fontWeight": 400,
+    "bold": 600,
+    "lineHeight": 1.5,
+    "typeScale": [
+      72,
+      48,
+      24,
+      20,
+      16,
+      14,
+      12
+    ],
+    "monospace": "Menlo, monospace",
+    "heading": {
+      "fontFamily": null,
+      "fontStyle": null,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "textTransform": null,
+      "letterSpacing": null,
+      "h0": {},
+      "h1": {},
+      "h2": {},
+      "h3": {},
+      "h4": {},
+      "h5": {},
+      "h6": {}
+    },
+    "alternativeText": {},
+    "space": [
+      0,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "centered": false
+    },
+    "colors": {
+      "text": "#111",
+      "background": "#fff",
+      "primary": "#08e",
+      "secondary": "#059",
+      "highlight": "#e08",
+      "border": "#ddd",
+      "muted": "#eee"
+    },
+    "border": {
+      "width": 1,
+      "radius": 2
+    },
+    "link": {},
+    "button": {
+      "hover": {
+        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
+      }
+    },
+    "input": {},
+    "body": {
+      "margin": 0
+    },
+    "breakpoints": {
+      "xs": "@media screen and (max-width:40em)",
+      "sm": "@media screen and (min-width:40em)",
+      "md": "@media screen and (min-width:52em)",
+      "lg": "@media screen and (min-width:64em)"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/mattcdowning/thyme-site",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "thyme-site",
+      "subhead": null,
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "thyme-site: ",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "mattcdowning",
+          "repo": "thyme-site"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1><a href=\"https://github.com/jchck/Thyme\">Thyme</a></h1>\n\n<p>Thyme is a minimal <a href=\"https://github.com/roots/sage\">Sage-based</a> WordPress starter theme built with HTML5 Boilerplate, gulp, npm, and PostCSS that supports both <a href=\"https://github.com/basscss/basscss\">Basscss</a> and <a href=\"https://github.com/tachyons-css/tachyons\">Tachyons</a> for smoking fast, composable themes. The purpose of this project is to bring the principles of Functional CSS to the WordPress &#x1F30E;.</p>\n<h2>Requirements</h2>\n<ul>\n<li>PHP &gt;= 5.4.x    </li>\n<li>Node.js 0.12.x </li>\n<li>gulp &gt;= 3.8.10  </li>\n</ul>\n<h2>Features</h2>\n<ul>\n<li><a href=\"http://gulpjs.com/\">gulp</a> build script that compiles PostCSS, lints JavaScript, optimizes images, removes unused CSS with UnCSS, and concatenates and minifies files</li>\n<li><a href=\"http://www.browsersync.io/\">BrowserSync</a> for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you&apos;re developing</li>\n<li><a href=\"http://npmjs.com/\">npm</a> for package management</li>\n<li><a href=\"https://github.com/austinpray/asset-builder\">asset-builder</a> for the JSON file based asset pipeline</li>\n<li><a href=\"https://roots.io/sage/docs/theme-wrapper/\">Theme wrapper</a></li>\n<li>ARIA roles and microformats</li>\n<li>Posts use the <a href=\"http://microformats.org/wiki/hnews\">hNews</a> microformat</li>\n<li><a href=\"https://roots.io/wpml/\">Multilingual ready</a> and over 30 available <a href=\"https://github.com/roots/sage-translations\">community translations</a></li>\n</ul>\n<h2>Theme installation</h2>\n<h3>via WordPress Admin Panel</h3>\n<ol>\n<li><a href=\"https://github.com/jchck/project-x\">Download the latest release</a> of Thyme.</li>\n<li>In your WordPress admin panel, navigate to Appearance-&gt;Themes</li>\n<li>Click Add New</li>\n<li>Click Upload Theme</li>\n<li>Upload the zip file that you downloaded.</li>\n</ol>\n<h2>Theme setup</h2>\n<p>Edit <code>lib/setup.php</code> to enable or disable theme features, setup navigation menus, post thumbnail sizes, post formats, and sidebars.</p>\n<h2>Theme development</h2>\n<p>Thyme uses <a href=\"http://gulpjs.com/\">gulp</a> as its build system and <a href=\"http://npmjs.com/\">npm</a> to manage front-end packages.</p>\n<h3>Install gulp</h3>\n<p>Building the theme requires <a href=\"http://nodejs.org/download/\">node.js</a>. We recommend you update to the latest version of npm: <code>npm install -g npm@latest</code>.</p>\n<p>From the command line:</p>\n<ol>\n<li>Install <a href=\"http://gulpjs.com\">gulp</a> globally with <code>npm install -g gulp</code></li>\n<li>Navigate to the theme directory, then run <code>npm install</code></li>\n</ol>\n<p>You now have all the necessary dependencies to run the build process.</p>\n<h3>Available gulp commands</h3>\n<ul>\n<li><code>gulp</code> &#x2014; Compile and optimize the files in your assets directory</li>\n<li><code>gulp watch</code> &#x2014; Compile assets when file changes are made</li>\n<li><code>gulp --production</code> &#x2014; Compile assets for production (no source maps).</li>\n</ul>\n<h3>Using BrowserSync</h3>\n<p>To use BrowserSync during <code>gulp watch</code> you need to update <code>devUrl</code> at the bottom of <code>assets/manifest.json</code> to reflect your local development hostname.</p>\n<p>For example, if your local development URL is <code>http://project-name.dev</code> you would update the file to read:</p>\n<pre>...\n  &quot;config&quot;: {\n    &quot;devUrl&quot;: &quot;http://project-name.dev&quot;\n  }\n...</pre><p>If your local development URL looks like <code>http://localhost:8888/project-name/</code> you would update the file to read:</p>\n<pre>...\n  &quot;config&quot;: {\n    &quot;devUrl&quot;: &quot;http://localhost:8888/project-name/&quot;\n  }\n...</pre><h2>Documentation</h2>\n<p>Sage documentation is available at <a href=\"https://roots.io/sage/docs/\">https://roots.io/sage/docs/</a>.</p>\n<h2>Contributing</h2>\n<p>Contributions are welcome from everyone. </p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/mattcdowning/thyme-site",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/mattcdowning",
+          "text": "mattcdowning"
+        }
+      ]
+    }
+  ]
+}
