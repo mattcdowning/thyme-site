@@ -99,8 +99,8 @@
     },
     {
       "component": "header",
-      "heading": "thyme-site",
-      "subhead": null,
+      "heading": "thyme",
+      "subhead": "a minimal Sage-based WordPress starter theme",
       "children": [
         {
           "component": "ui/TweetButton",
