@@ -125,12 +125,16 @@
       "component": "footer",
       "links": [
         {
-          "href": "https://github.com/mattcdowning/thyme-site",
+          "href": "https://github.com/jchck/thyme",
           "text": "GitHub"
         },
         {
-          "href": "https://github.com/mattcdowning",
-          "text": "mattcdowning"
+          "href": "https://twitter.com/jchck_",
+          "text": "@jchck_"
+        },
+        {
+          "href": "https://twitter.com/mattcdowning",
+          "text": "@mattcdowning"
         }
       ]
     }
