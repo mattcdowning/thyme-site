@@ -36,12 +36,7 @@
   "content": [
     {
       "component": "nav",
-      "links": [
-        {
-          "href": "https://github.com/mattcdowning/thyme-site",
-          "text": "GitHub"
-        }
-      ]
+      "links": []
     },
     {
       "component": "header",
